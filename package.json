@@ -1,0 +1,29 @@
+{
+  "name": "horizon-discord",
+  "version": "1.0.0",
+  "description": "A Discord RichPresence integration for [HorizonServers]",
+  "main": "index.js",
+  "bin": "index.js",
+  "dependencies": {
+    "discord-rich-presence": "0.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13ace37/horizon-discord.git"
+  },
+  "keywords": [
+    "HorizonServers",
+    "Discord",
+    "RPC",
+    "CS:GO"
+  ],
+  "author": "Riccardo H.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/13ace37/horizon-discord/issues"
+  },
+  "homepage": "https://github.com/13ace37/horizon-discord#readme"
+}
