@@ -108,4 +108,7 @@ dist
 
 # Local WebStorm Files
 .idea/
+
+# Local build/util files
 *.bat
+build-*
