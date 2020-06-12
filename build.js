@@ -12,6 +12,8 @@ __dirname = fullDir.join("\\");
 
 // Not the best workaround for the execDir but its working :)
 
+const integration = {};
+
 integration.modules = {
     server: require("http"),
     rpc: require("discord-rich-presence")("663588201033891858")
@@ -24,7 +26,7 @@ integration.server.addData = function (data) {
 integration.server.getPlayerData = function (result) {
     try {
         integration.data.playerData = JSON.parse(integration.temp.data);
-    } catch (error) {console.error(error)}
+    } catch (error) {console.log(error)}
     result.end("");
 
     let map = "N/A";
@@ -96,10 +98,10 @@ integration.server.formatPresence = function (data) {
     return {
 
         details: "- # -",
-        largeImageKey: '',
+        largeImageKey: "",
         //startTimestamp: data.date
 
-    }
+    };
 
 };
 

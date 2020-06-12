@@ -1,4 +1,6 @@
-const integration = require(require("path").dirname(require.main.filename));
+const { dirname } = require("path");
+const integration = dirname(require.main.filename);
+
 
 integration.server.postPlayerData = function (data) {
 
@@ -41,9 +43,9 @@ integration.server.formatPresence = function (data) {
     return {
 
         details: "- # -",
-        largeImageKey: '',
+        largeImageKey: "",
         //startTimestamp: data.date
 
-    }
+    };
 
 };

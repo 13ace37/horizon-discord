@@ -4,7 +4,8 @@ module.exports = rpc = {
     temp: {}, // temp player data either send from the client or saved for later use
 };
 
-require(require("path").join(require.main.path + "/src/lib/core/modules"));
-require(require("path").join(require.main.path + "/src/lib/core/server"));
-require(require("path").join(require.main.path + "/src/lib/core/getPlayerData"));
-require(require("path").join(require.main.path + "/src/lib/core/postPlayerData"));
+const { join } = require("path");
+require(join(require.main.path + "/src/lib/core/modules"));
+require(join(require.main.path + "/src/lib/core/server"));
+require(join(require.main.path + "/src/lib/core/getPlayerData"));
+require(join(require.main.path + "/src/lib/core/postPlayerData"));

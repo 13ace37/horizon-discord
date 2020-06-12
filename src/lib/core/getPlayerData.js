@@ -1,4 +1,5 @@
-const integration = require(require("path").dirname(require.main.filename));
+const { dirname } = require("path");
+const integration = dirname(require.main.filename);
 
 integration.server.addData = function (data) {
     integration.temp.data = data;
@@ -7,7 +8,7 @@ integration.server.addData = function (data) {
 integration.server.getPlayerData = function (result) {
     try {
         integration.data.playerData = JSON.parse(integration.temp.data);
-    } catch (error) {console.error(error)}
+    } catch (error) {console.log(error)}
     result.end("");
 
     let map = "N/A";

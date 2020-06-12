@@ -1,4 +1,6 @@
-const integration = require(require("path").dirname(require.main.filename));
+const { dirname } = require("path");
+const integration = dirname(require.main.filename);
+
 
 integration.server.handle = function (request, result) {
 
